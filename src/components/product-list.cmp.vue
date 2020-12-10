@@ -3,7 +3,7 @@
     <ul v-if="stores">
       <li v-for="store in stores" :key="store.StoreId">
         <div v-for="product in store.Products" :key="product">
-          {{product}}
+          <productPreview :product="product"/>
         </div>
       </li>
     </ul>
@@ -11,11 +11,12 @@
 </template>
 
 <script>
-
+import productPreview from '@/components/product-preview.cmp.vue';
 export default {
   name: 'productApp',
   data(){
     return{
+      
     }
   },
   computed:{
@@ -24,6 +25,9 @@ export default {
     }
   },
   created(){
+  },
+  components:{
+    productPreview
   }
 }
 </script>
