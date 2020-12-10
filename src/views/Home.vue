@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
+    {{getShops}}
   </div>
 </template>
 
@@ -9,6 +10,11 @@
 
 export default {
   name: 'Home',
+  computed:{
+    getShops(){
+      return this.$store.getters.getShops;
+    }
+  },
   components: {
     
   }
