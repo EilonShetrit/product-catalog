@@ -2,6 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 // import Home from '../views/Home.vue'
 import productApp from '../views/product-app.vue'
+import storeDetails from '../components/store-details.cmp.vue';
+import productPreview from '../components/product-preview.cmp.vue';
 
 Vue.use(VueRouter)
 
@@ -10,7 +12,15 @@ const routes = [
     path: '/',
     name: 'Home',
     component: productApp
+  },{
+    path:'/details/:storeId',
+    component:storeDetails
   },
+  {
+    path:'/product/:productId',
+    component:productPreview
+  }
+
   // {
   //   path: '/',
   //   name: 'Home',
