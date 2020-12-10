@@ -2,7 +2,7 @@
 <template>
   
   <section>
-      <div>
+      <div class="product">
           <h4>{{product.ProductTitle}}</h4>
           <p>{{product.Description}}</p>
           <img :src="product.ProductImage" alt="">

@@ -16,12 +16,23 @@ export default {
   name: 'productApp',
   data(){
     return{
-      
+      gendre:'all',
     }
   },
   computed:{
     stores(){
       return this.$store.getters.getStores;
+    },
+    filterdStores(){
+      if(this.gendre === 'all') return this.stores
+      	var res = stores.filter((store) => {
+          store.filter((product) => {
+            // return product.gendre.toLowerCase() === this.gendre.toLowerCase();
+            return if (product.price > this.min && product.price < this.max)
+          });
+				//console.log('item',item.genre)
+			
+			});
     }
   },
   created(){
