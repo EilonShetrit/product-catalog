@@ -16,8 +16,9 @@ export default{
         }
     },
     actions:{
-        loadShops(context){
-            var shops = productService.query();
+        async loadShops(context){
+            var shops = await productService.query();
+            console.log('shops',shops)
             context.commit({type:'setShops',shops});
             return shops
         }
