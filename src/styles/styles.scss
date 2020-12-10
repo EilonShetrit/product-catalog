@@ -1,0 +1,35 @@
+
+//BASIC SETUP{
+@import 'basics/base.scss';
+@import 'basics/helpers';
+
+
+
+
+
+
+
+//SETUP
+@import 'setup/typography';
+@import 'setup/variables';
+@import 'setup/productins';
+@import 'setup/functions';
+
+
+
+
+
+
+
+
+
+
+//COMPONENTS
+@import 'views/product-app.scss';
+@import 'views/app-footer.scss';
+@import 'components/app-header.scss';
+
+@import 'views/product-details.scss';
+@import 'components/product-list.scss';
+@import 'components/product-preview.scss';
+@import 'components/product-preview.scss';

@@ -2,7 +2,7 @@
   <div class="product-list">
     <ul v-if="stores">
       <li v-for="store in stores" :key="store.StoreId">
-        {{store}}
+        
       </li>
     </ul>
   </div>
