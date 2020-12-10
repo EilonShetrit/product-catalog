@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 // import Home from '../views/Home.vue'
 import productApp from '../views/product-app.vue'
 import storeDetails from '../components/store-details.cmp.vue';
+import productPreview from '../components/product-preview.cmp.vue';
 
 Vue.use(VueRouter)
 
@@ -14,6 +15,10 @@ const routes = [
   },{
     path:'/details/:storeId',
     component:storeDetails
+  },
+  {
+    path:'/product/:productId',
+    component:productPreview
   }
 
   // {

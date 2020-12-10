@@ -4,7 +4,8 @@ import {productService } from '@/services/productService.js';
 export default{
     state:{
         stores:null,
-        currStore:null
+        currStore:null,
+        currProduct:null
     },
     getters:{
         getStores(state){
@@ -12,6 +13,9 @@ export default{
         },
         getStore(state){
             return state.currStore
+        },
+        getProduct(state){
+            return state.currProduct
         }
     },
     mutations:{
@@ -20,6 +24,9 @@ export default{
         },
         setCurrStore(state,payload){
             state.currStore = payload.store
+        },
+        setCurrProduct(state,payload){
+            state.currProduct = payload.product
         }
     },
     actions:{
@@ -32,6 +39,10 @@ export default{
         getCurrStore(context,payload){
             console.log(payload.store);
             context.commit({type:'setCurrStore',store:payload.store})
+        },
+        getCurrProduct(contect,payload){
+            console.log(payload.product);
+            contect.commit({type:'setCurrProduct',product:payload.product})
         }
     }
 }
