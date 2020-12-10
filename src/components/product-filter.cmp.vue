@@ -1,6 +1,6 @@
 <template>
   <div class="product-filter">
- 
+    
   </div>
 </template>
 
