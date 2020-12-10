@@ -6,7 +6,9 @@ export default{
         shops:null,
     },
     getters:{
-
+        getShops(state){
+            return state.shops
+        }
     },
     mutations:{
         setShops(state,payload){
