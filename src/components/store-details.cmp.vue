@@ -3,6 +3,7 @@
 <template>
   <section>
       <div>
+          <h1>{{store.StoreName}}</h1>
           <ul>
               <li v-for="product in store.Products" :key="product">
                   <h3>{{product.ProductTitle}}</h3>    
