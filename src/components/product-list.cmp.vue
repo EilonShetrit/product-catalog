@@ -2,10 +2,7 @@
   <div class="product-list">
     <ul v-if="stores">
       <li v-for="store in stores" :key="store.StoreId">
-        <div v-for="store in stores" :key="store">
-          <!-- <productPreview :product="product"/> -->
           <storePreview :store="store"/>
-        </div>
       </li>
     </ul>
   </div>
