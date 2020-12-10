@@ -29,7 +29,9 @@ export default {
       	var res = stores.filter((store) => {
           store.filter((product) => {
             // return product.gendre.toLowerCase() === this.gendre.toLowerCase();
-            return if (product.price > this.min && product.price < this.max)
+             if (product.price > this.min && product.price < this.max){
+                return product
+            }
           });
 				//console.log('item',item.genre)
 			
