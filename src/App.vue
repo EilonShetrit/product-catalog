@@ -11,7 +11,7 @@
 export default {
   created(){
     this.$store.dispatch({
-      type:'loadShops'
+      type:'loadStores'
     })
   }
 }

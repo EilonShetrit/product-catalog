@@ -13,4 +13,3 @@ async function query(){
     const res =  await axios.get(baseUrl);
     return res.data[0].Stores;
 }
-console.log(query());
