@@ -8,5 +8,8 @@
 
 export default {
   name: 'productApp',
+  // created(){
+  //   this.$store.dispatch({type: "loadShops"})
+  // }
 }
 </script>

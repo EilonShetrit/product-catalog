@@ -3,24 +3,24 @@ import {productService } from '@/services/productService.js';
 
 export default{
     state:{
-        shops:null,
+        stores:null,
     },
     getters:{
-        getShops(state){
-            return state.shops
+        getStores(state){
+            return state.stores
         }
     },
     mutations:{
-        setShops(state,payload){
-            state.shops = payload.shops;
+        setStores(state,payload){
+            state.stores = payload.stores;
         }
     },
     actions:{
-        async loadShops(context){
-            var shops = await productService.query();
-            console.log('shops',shops)
-            context.commit({type:'setShops',shops});
-            return shops
+        async loadStores(context){
+            var stores = await productService.query();
+            console.log('stores',stores)
+            context.commit({type:'setStores',stores});
+            return stores
         }
     }
 }
